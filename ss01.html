@@ -14,10 +14,41 @@
       color: #222;
       }
 
-      /* ヘッダー・・フッター */
-      header, footer {
-      max-width: 960px;
-      margin: 0 auto;
+       /* ===== ベース ===== */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif;
+      background-color: #f7f7f7;
+      color: #222;
+      line-height: 1.8;
+    }
+
+    /* ===== ヘッダー ===== */
+      header {
+        border-bottom: 1px solid #ddd;
+        padding: 16px 20px;
+        background: #fff;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 1.2rem;
+        font-weight: normal;
+      }
+      
+    /* ===== フッター ===== */
+      footer {
+        border-top: 1px solid #ddd;
+        margin-top: 80px;
+        padding: 16px 20px;
+        background: #fff;
+        text-align: center;
+        font-size: 0.85rem;
+        color: #666;
       }
 
       /* ログイン画面 */
