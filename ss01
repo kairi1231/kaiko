@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>なみだを拭うこばなし</title>
+</head>
+ <body>
+
+    <div id="login">
+    <p>パスワードを入力してください</p>
+    <input type="password" id="password">
+    <button onclick="checkPassword()">ログイン</button>
+    </div>
+
+    <div id="content" style="display:none;">
+    <article class="novel">
+        <p>感情がぐちゃぐちゃになる。</p>
+
+        <p>理佐はいつだって優しい。<br>
+        でもそれは私だけじゃない。<br>
+        みんなに平等で。<br>
+        特別になった私にも平等だ。</p>
+
+        <p>「由依…？」</p>
+
+        <p>眉を限界まで下げて私を呼ぶ。</p>
+
+        <p>「泣いてるの？」<br>
+        「泣いてない。」</p>
+
+        <p>みんなに平等で優しいから、みんなも理佐に優しい。<br>
+        それでも、彼女はみんなを優先する。</p>
+
+        <p>「泣いてるじゃん」<br>
+        「うるさい、泣いてない」</p>
+
+        <p>だけど、それが私が好きになった彼女だから。<br>
+        私がみんな以上に優しくすればいい。<br>
+        素直じゃない私が顔を出すけど。</p>
+
+        <p>「何に悩んでるのとか聞かないけどさ…」</p>
+
+        <p>大きな手が頬に触れて顔を上げる仕草すら、</p>
+
+        <p>「わたしは由依が泣いてるのいやだから」</p>
+
+        <p>ゆっくりと近づいてくるちょっと情け無い顔も、</p>
+
+        <p>「泣かないで」</p>
+
+        <p>涙を拭うキスだって。</p>
+
+        <p>「しょっぱい。」</p>
+
+        <p>ぎゅっと目を瞑った顔を乱暴に引き寄せる。</p>
+
+        <p>「そっちじゃない」</p>
+
+        <p>噛み付くようなキスは優しくないけど、<br>
+        今日は私が優しくするから。</p>
+
+        <p>驚いた顔の彼女をやっぱり少し強引に押し倒す。<br>
+        ごつんとラグに頭をぶつけて一瞬顔を顰めたあと、目を白黒させてる顔がかわいくて。</p>
+
+        <p>ぐちゃぐちゃになった感情はもっとぐちゃぐちゃになったけど、<br>
+        貴女を好きな感情だけははっきりとしているから。</p>
+
+        <p>ありったけの優しいキスで仕切り直しをさせてください。</p>
+    </article>
+    </div>
+
+<script>
+  function checkPassword() {
+    const pass = document.getElementById("password").value;
+    if (pass === "yourpassword") {
+      document.getElementById("login").style.display = "none";
+      document.getElementById("content").style.display = "block";
+    } else {
+      alert("パスワードが違います");
+    }
+  }
+</script>
+
+</body>
+</html>
+
