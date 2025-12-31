@@ -3,8 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>なみだを拭うこばなし</title>
+    /* 全体リセット（最低限） */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif;
+  background-color: #f7f7f7;
+  color: #222;
+}
+
+/* ヘッダー・・フッター */
+header, footer {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* ログイン画面 */
+#login {
+  max-width: 360px;
+  margin: 120px auto;
+  padding: 24px;
+  background: #fff;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+#login p {
+  margin-bottom: 16px;
+  font-size: 0.95rem;
+}
+
+#login input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  font-size: 1rem;
+}
+
+#login button {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  background: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#login button:hover {
+  background: #555;
+}
+
+/* 小説本文 */
+.novel {
+  max-width: 720px;
+  margin: 80px auto;
+  padding: 0 20px;
+  line-height: 1.9;
+  font-size: 1rem;
+}
+
+/* 段落 */
+.novel p {
+  margin: 0 0 1.6em;
+}
+
+/* セリフを少し読みやすく */
+.novel p:has(> br) {
+  line-height: 2;
+}
+
+/* スマホ対応 */
+@media (max-width: 600px) {
+  .novel {
+    margin: 48px auto;
+    font-size: 0.95rem;
+  }
+}
+
 </head>
  <body>
 
