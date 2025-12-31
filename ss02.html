@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>和手</title>
+</head>
+<body>
+    <div id="login">
+    <p>🦔パスワード🦔</p>
+    <input type="password" id="password">
+    <button onclick="checkPassword()">ログイン</button>
+    </div>
+
+<div id="content" style="display:none;">
+<header>
+    h1>和手</h1>
+</header>
+
+<article class="novel">
+    <p>
+    週末の午後十時、長い針はてっぺんから半分近く回ったところで目視では分からないほどゆっくりと刻を進める。
+    暇潰しに見ていた動画が不自然に止まり、ポップなポキポキという音とバナーが画面上部に現れる。
+    いつもなら邪魔をされたような気がするそいつだけど緑のアイコンと一緒に表示された送信者の名前を認識した途端に違うものになる。
+    指をタップさせて画面がメッセンジャーアプリに切り替わる。
+    </p>
+
+    <p>“会いたい”</p>
+
+    <p>
+    あの人にしては随分と急で珍しく自分の気持ちを優先したような一言。
+    あまり人の心に機敏ではない方だと思っているけれど何かを感じ、
+    少しだけ返事を考え倦ねていると直ぐにまたメッセージを受信する。
+    </p>
+
+    <p>
+    “来週とか”<br>
+    “どうかな？”<br>
+    “あ、でも予定あるよね？”<br>
+    “急すぎたね”<br>
+    “ごめんね”
+    </p>
+
+    <p>
+    ぽんぽんぽんと追加される吹き出しは最初の一言を無かったことにするように軽快に、
+    なんでもない戯れ事のように終わらされる気がして。
+    </p>
+
+    <p>“今、理佐さんの家に居ます”</p>
+
+    <p>
+    サプライズのつもりではないけれど全然会えてなかったから。
+    数えるほどしか使ったことのない合鍵を使って前に来たときよりも
+    不自然なほど綺麗に整理された家に忍び込んでいた。
+    </p>
+
+    <p>
+    連投されていたメッセージがピタッと止んで、私のメッセージに遅れること五分。
+    短い吹き出しが一つだけ。
+    </p>
+
+    <p>
+    “うそ？”<br>
+    “早く帰ってきてください”
+    </p>
+
+    <p>
+    もう寝ちゃいそう、と追加で送ったのを最後にメッセージは途切れる。
+    それから三十分ほど経って鍵が外される音の直ぐあとにドアの開く音。
+    </p>
+
+    <p>
+    そろそろだろうと思って待機していた足で直ぐに玄関へと向かえば、
+    グレーのトレンチコートを羽織り少し息を切らせた理佐さんが
+    ぱちぱちと瞬きを繰り返し驚いたような顔を見せる。
+    </p>
+
+    <p>
+    冷凍だけどね、と悪戯っぽく笑う姿はやっぱりあの頃によく見た姿と同じだから、
+    明日からの彼女が頑張って勇気を出せるように私はいつも通り彼女のために。
+    </p>
+</article>
+
+<div class="end">
+<p>終わり</p>
+</div>
+
+      </div>
+<script>
+    function checkPassword() {
+    const pass = document.getElementById("password").value;
+    if (pass === "0727") {
+    document.getElementById("login").style.display = "none";
+    document.getElementById("content").style.display = "block";
+    } else {
+    alert("パスワードが違います");
+    }
+    }
+</script>
+      </body>
+</html>
