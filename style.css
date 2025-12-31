@@ -33,14 +33,14 @@ header, footer {
 }
 
 #login input {
-  width: 100%;
+  width: 90%;
   padding: 10px;
   margin-bottom: 12px;
   font-size: 1rem;
 }
 
 #login button {
-  width: 100%;
+  width: 75%;
   padding: 10px;
   font-size: 1rem;
   background: #333;
