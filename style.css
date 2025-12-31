@@ -60,8 +60,8 @@ header, footer {
   padding: 0 20px;
   line-height: 1.9;
   font-size: 1rem;
+  border-bottom: 1px solid #ccc
 }
-
 /* 段落 */
 .novel p {
   margin: 0 0 1.6em;
@@ -70,6 +70,20 @@ header, footer {
 /* セリフを少し読みやすく */
 .novel p:has(> br) {
   line-height: 2;
+}
+
+.end {
+  max-width: 680px;
+  margin: 0 auto 64px;
+  padding: 0 20px;
+  text-align: right;
+
+  color: #666;
+  font-size: 0.9em;
+}
+
+.end p {
+  margin: 0;
 }
 
 /* スマホ対応 */
