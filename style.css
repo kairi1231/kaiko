@@ -15,6 +15,13 @@ body {
   padding: 2em 1.5em;
 }
 
+/* リンク装飾なし */
+a.no-deco {
+  text-decoration: none;
+  color: inherit;
+}
+
+
 /* 区切り線 */
 hr {
   margin: 2.5em 0;
