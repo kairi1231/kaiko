@@ -1,12 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-    <meta charset="utf-8" />
-    <meta name="robots" content="noindex,noarchive,nofollow,noimageindex">
-     <meta name="viewport" content="width=device-width, initial-scale=1"
-    <title>test site</title>
-     <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex,noarchive,nofollow,noimageindex">
+  <title>懐古</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body oncontextmenu="return false;">
+
+<!-- ログイン画面 -->
+<div id="login">
+  <p>🦔 パスワード 🦔</p>
+  <input type="password" id="password">
+  <button onclick="checkPassword()">ログイン</button>
+</div>
+
+<!-- ログイン後に表示 -->
+<div id="content" style="display:none;">
+
+  <header>
+    <h1>作品置き場</h1>
+    <p class="overview">
+    まとめ。閲覧はパスワード制です。
+    </p>
+  </header>
+
+  <main class="novel">
+    <p>
+      <a href="wade.html">和手</a><br>
+      <small>とある企画参加作品</small>
+    </p>
+
+    <p>
+      <a href="namida.html">なみだを拭うこばなし</a><br>
+      <small>短編</small>
+    </p>
+  </main>
+
+  <footer>
+    <p></p>
+  </footer>
+
+</div>
+
+<script>
+  function checkPassword() {
+    const pass = document.getElementById("password").value;
+    if (pass === "0727") {
+      document.getElementById("login").style.display = "none";
+      document.getElementById("content").style.display = "block";
+    } else {
+      alert("パスワードが違います");
+    }
+  }
+</script>
+
 </body>
 </html>
