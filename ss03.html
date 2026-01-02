@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ひと休みしませんか</title>
+</head>
+<body>
+    <div id="login">
+    <p>🦔パスワード🦔</p>
+    <input type="password" id="password">
+    <button onclick="checkPassword()">ログイン</button>
+    </div>
+
+    <div id="content" style="display:none;">
+        <header>
+        <h1>ひと休みしませんか</h1>
+        </header>
+
+<article class="novel">
+
+<div class="overview">
+    <p>
+        都心から少し離れた小さな一軒家で暮らすタレント兼執筆家nghmくんと一般人rsさんと三色をまとったオス猫の日常
+    </p>
+    </div>
+    <p>
+        お昼ごはんを食べたあと、少しゆっくりしてから近所のスーパーで買い物を済ませて。<br>
+        なんだかんだと家のことをしている内にあっという間に時計の針は午後三時を回っている。
+    </p>
+
+    <p>
+        廊下の先の閉じた扉。<br>
+        たくさんの本に埋れて原稿用紙の上にブルーブラックのインクを走らせる姿を思い浮かべてケトルに火をかける。<br>
+        慌てずじっくり時間を掛けて淹れたコーヒーとよくある素朴な味のプレーンのクッキー。<br>
+        お気に入りの小皿にきちんと盛り付けたのに、一枚余分に取り出してぽいっと口に放り込んでしまうのは何故だろう。
+    </p>
+
+    <p>
+        〝なーう〟
+    </p>
+
+    <p>
+        日の当たる窓際の特等席で午睡に耽っていたはずのわが家の王さまがいつの間にかこちらを見上げて。<br>
+        なにを食べているんですか、とでも言いたげに甘えた声を上げる。
+    </p>
+
+    <p>
+        〝ぼくにも下さい。〟
+    </p>
+
+    <p>
+        じっと見つめてくるハシバミ色の大きな瞳に負けて、彼専用のお皿にペースト状のおやつを用意してあげる。<br>
+        ウォーターボウルの横、木製の食台の前に健気に待機している後ろ姿にふはっと声が洩れて、<br>
+        お待たせしましたと高級レストランの給仕さながらにお皿を置くと一目散に突っ込んでいく小さな頭。
+    </p>
+
+    <p>
+        ぴんっと立ち上がった二つの三角の間、狭い額を指で撫でてグルグルと鳴らすご機嫌な声に癒される。
+    </p>
+
+    <p>
+        さて、コーヒーが冷めないうちに扉の向こうで黙々とお仕事をする彼に届けなきゃ。
+    </p>
+
+<hr>
+
+    <p>
+        長くない廊下を渡り、閉じた扉をノックする。<br>
+        返事がないのは想定内だ。
+    </p>
+
+<p>
+        もう一度合図をしてから扉を開けば私の右足より先にするりと抜けていく三色をまとった彼。<br>
+        なーうとひと声。
+</p>
+
+<p>
+        「ごめん。もしかして呼んだ？」<br>
+        「うん。でも、気付かないって知ってた」<br>
+        「……すみません」
+</p>
+
+<p>
+        今度は私がくすくすと笑う番。<br>
+        声に振り向いたばつの悪そうな顔はそれでも懲りずにもう一度近づいてくる。
+</p>
+
+<p>
+    「いたっ」
+</p>
+
+<p>
+    その右手はまだ受け入れられません。
+</p>
+
+</article>
+<div class="end">
+  <p>おしまい</p>
+</div>
+
+</div>
+
+<script>
+    function checkPassword() {
+    const pass = document.getElementById("password").value;
+    if (pass === "0727") {
+    document.getElementById("login").style.display = "none";
+    document.getElementById("content").style.display = "block";
+    } else {
+    alert("パスワードが違います");
+    }
+    }
+</script>
+
+</body>
+</html>
