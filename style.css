@@ -93,6 +93,14 @@ header, footer {
   margin: 0;
 }
 
+/* 概要 */
+.overview {
+  font-size: 0.9em;
+  color: #555;
+  margin: 1em 0 2em;
+}
+
+
 /* スマホ対応 */
 @media (max-width: 600px) {
   .novel {
