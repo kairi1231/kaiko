@@ -10,12 +10,17 @@ body {
   font-size: 16px;
 }
 
+/* 全体の余白（トップ含む） */
+body {
+  padding: 2em 1.5em;
+}
+
+/* 区切り線 */
 hr {
   margin: 2.5em 0;
   border: none;
   border-top: 1px solid #aaa;
 }
-
 
 /* ヘッダー・・フッター */
 header, footer {
@@ -106,5 +111,11 @@ header, footer {
   .novel {
     margin: 48px auto;
     font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 1.5em 1em;
   }
 }
