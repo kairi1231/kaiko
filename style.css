@@ -21,6 +21,11 @@ a.no-deco {
   color: inherit;
 }
 
+a.no-deco:hover {
+  color: #888;
+}
+
+
 
 /* 区切り線 */
 hr {
